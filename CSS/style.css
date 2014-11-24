@@ -192,7 +192,9 @@
 					margin: 0 auto;
 					margin-left: 1.3%;
 					margin-top: 2.5%;
-					margin-bottom: 2.5%;}
+					margin-bottom: 2.5%;
+					border:groove 6px #006400;
+					border-bottom: none;}
 
 					#seccion{color: white;
 						font-family: cabecera;
