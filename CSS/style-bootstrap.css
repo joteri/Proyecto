@@ -1,0 +1,58 @@
+#menu ul li:hover{background-color: black}
+
+body{padding: 0;}
+
+				#menu ul li:hover a{color: white;
+				text-shadow:none;}
+
+				#menu{width: 65%;
+					margin:0 auto;
+					margin-top: 100px;
+				background-color: white;
+				height: 50px;
+				position: relative;
+				border-radius: 50px;
+				box-shadow: 3px 3px 5px black;
+				background: rgb(79,133,187); /* Old browsers */
+				background: -moz-linear-gradient(top,  rgba(79,133,187,1) 0%, rgba(79,133,187,1) 100%); /* FF3.6+ */
+				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(79,133,187,1)), color-stop(100%,rgba(79,133,187,1))); /* Chrome,Safari4+ */
+				background: -webkit-linear-gradient(top,  rgba(79,133,187,1) 0%,rgba(79,133,187,1) 100%); /* Chrome10+,Safari5.1+ */
+				background: -o-linear-gradient(top,  rgba(79,133,187,1) 0%,rgba(79,133,187,1) 100%); /* Opera 11.10+ */
+				background: -ms-linear-gradient(top,  rgba(79,133,187,1) 0%,rgba(79,133,187,1) 100%); /* IE10+ */
+				background: linear-gradient(to bottom,  rgba(79,133,187,1) 0%,rgba(79,133,187,1) 100%); /* W3C */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4f85bb', endColorstr='#4f85bb',GradientType=0 ); /* IE6-9 */
+			border-top: solid 2px black;
+			border-left: solid 2px black;}
+
+			#menu ul{margin: 0;
+				padding:0;
+				width: 100%;
+				position: absolute;
+				bottom: 7px;
+				list-style-type: none;}
+
+			#menu ul li{float: left;
+				margin-left: 6.5%;
+				padding: 10px;
+				border-radius: 50px;}
+
+				#footer{background-image: url(../imagenes/cabecera.jpg);
+							border-radius: 25px;
+							border:solid 2px black;
+							margin-top: 2.5%;
+							text-align: center;
+							font-family: cabecera;
+							color: black;}
+
+				@font-face{
+	font-family: menu;
+	src:url(../fuentes/font_menu.ttf);}
+
+	@font-face{
+	font-family: cabecera;
+	src:url(../fuentes/old_school_united_shadow.ttf);}
+
+			#menu ul li a{text-decoration: none;
+				color: black;
+				font-family: menu;
+			text-shadow:3px 2px 3px white;}

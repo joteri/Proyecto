@@ -7,7 +7,7 @@
 	font-family: cabecera;
 	src:url(../fuentes/old_school_united_shadow.ttf);}
 
-	
+	div.clear{clear: both;}
 
 	#redessociales{float: right;
 		width: 16%;}
@@ -27,7 +27,9 @@
 			height: 150px;
 			position: relative;
 			background-image: url(../imagenes/Encabezado.jpg);
-			background-size: cover;
+			background-size: 100% 100%;
+			background-position: fixed;
+
 			border-radius: 50px;
 			margin-top: 2.5%;
 			box-shadow: 3px 3px 5px black;
@@ -78,7 +80,7 @@
 			#menu ul li a{text-decoration: none;
 				color: black;
 				font-family: menu;
-			text-shadow:3px 2px 3px white;}
+			text-shadow:3px 3px 5px gray;}
 
 			#contenido{width: 100%;
 				margin: 0;
@@ -87,6 +89,8 @@
 				background-color: rgba(255,255,255,0.3);
 				border-radius: 25px;
 			box-shadow: 3px 3px 5px black;}
+
+
 
 			#principal{width: 65%;
 				float: left;}
@@ -120,6 +124,7 @@
 					div.titular{
 					padding: 10px;
 					display: inline-block;
+					width: 70%;
 					margin: 0;
 					background: rgb(255,48,25); /* Old browsers */
 					background: -moz-linear-gradient(top,  rgba(255,48,25,1) 0%, rgba(207,4,4,1) 100%); /* FF3.6+ */
@@ -143,31 +148,7 @@
 					padding: 0;
 					margin-top: 2.5%;}
 
-				#lomasleido{height: 170px;
-					border-radius: 25px;
-					border:solid 2px black;
-					text-align: center;
-					background: rgb(255,48,25); /* Old browsers */
-					background: -moz-linear-gradient(top,  rgba(255,48,25,1) 0%, rgba(207,4,4,1) 100%); /* FF3.6+ */
-					background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,48,25,1)), color-stop(100%,rgba(207,4,4,1))); /* Chrome,Safari4+ */
-					background: -webkit-linear-gradient(top,  rgba(255,48,25,1) 0%,rgba(207,4,4,1) 100%); /* Chrome10+,Safari5.1+ */
-					background: -o-linear-gradient(top,  rgba(255,48,25,1) 0%,rgba(207,4,4,1) 100%); /* Opera 11.10+ */
-					background: -ms-linear-gradient(top,  rgba(255,48,25,1) 0%,rgba(207,4,4,1) 100%); /* IE10+ */
-					background: linear-gradient(to bottom,  rgba(255,48,25,1) 0%,rgba(207,4,4,1) 100%); /* W3C */
-					filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3019', endColorstr='#cf0404',GradientType=0 ); /* IE6-9 */}
 				
-				#lomasleido h3{margin: 0;
-					margin-top: 10px;
-					padding: 10px;
-					background-color: black;
-					color: white;
-					font-family: cabecera;
-					border-radius: 25px;
-					display: inline-block;}
-
-				#lomasleido ul{list-style-type: none;}
-
-				#lomasleido ul li a{color: black;}
 
 				#principal > h1{background: rgb(255,48,25); /* Old browsers */
 					background: -moz-linear-gradient(top,  rgba(255,48,25,1) 0%, rgba(207,4,4,1) 100%); /* FF3.6+ */
@@ -250,8 +231,8 @@
 							color: white;
 							text-align: center;}
 
-					@media screen and (max-width: 1000px){
-						#twitter{float: none;}
+					@media screen and (max-width: 1200px){
+						#menu ul li{font-size: 12px;}
 					}
 
 							
