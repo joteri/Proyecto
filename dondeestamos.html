@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<head>
+	<title>GamerZone.com | Donde Estamos</title>
+	<meta charset="UTF-8">
+	<link href="imagenes/icono.ico" type="image/x-icon" rel="shortcut icon" />
+	<link rel=stylesheet href="CSS/style.css" type="text/css">
+	
+	<script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=false"></script>
+	<script type="text/javascript">// <![CDATA[
+ 
+ 
+    function mostrarGoogleMaps()
+   {
+        //Creamos el punto a partir de las coordenadas:
+       var punto = new google.maps.LatLng(42.213333,  -8.693190);
+ 
+       //Configuramos las opciones indicando Zoom, punto(el que hemos creado) y tipo de mapa
+       var myOptions = {
+           zoom: 16, center: punto, mapTypeId: google.maps.MapTypeId.ROADMAP
+       };
+ 
+       //Creamos el mapa e indicamos en qué caja queremos que se muestre
+       var map = new google.maps.Map(document.getElementById("mostrarMapa"),  myOptions);
+ 
+       //Opcionalmente podemos mostrar el marcador en el punto que hemos creado.
+       var marker = new google.maps.Marker({
+           position:punto,
+           map: map,
+           title:"Título del mapa"});
+}
+// ]]>
+</script>
+
+<style type="text/css">
+#contenido{background: none;
+border-radius: 0;
+box-shadow: none;}
+</style>
+
+	</head>
+	<body onload="mostrarGoogleMaps()">
+<section id="contenedor">
+
+			<header id="header">
+				
+			</header>
+
+			<nav id="menu">
+				<ul>
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="noticias/index.html">Noticias</a></li>
+					<li><a href="dondeestamos.html">Donde Estamos</a></li>
+					<li><a href="galeria.html">Galeria</a></li>
+					<li><a href="Contacto.html">Contacto</a></li>
+					<div class="clear"></div>
+				</ul>
+			</nav>
+			<section id="contenido">
+				<div id="mostrarMapa" style="width: 450px; height: 350px; display:inline-block;"> </div>
+				<div id="datos">
+					<h3>DONDE ESTAMOS</h3>
+					<p>
+					Colegio de Fomento Montecastelo</br>
+					Dr. Paz Pardo, 84, 36214 Vigo, Pontevedra, PO, España</br>
+					colegiomontecastelo.com</br>
+					986 41 24 88</p>
+				</div>
+			</section>
+									
+			<footer id="footer">
+				<h2>Copyright © 2014 WebMaster GamerZone.Com All Rights Reserved</h2>
+			</footer>
+</section>
+
+	</body>
+</html>
